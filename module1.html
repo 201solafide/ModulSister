@@ -61,6 +61,27 @@ console.log("Hello, World!");</code></pre>
                 <!-- Data akan muncul di sini -->
             </ul>
         </div>
+
+        <!-- Tombol Rise Hand untuk Mobile -->
+        <button class="risehand-button" onclick="openRiseHandModal()">✋</button>
+
+        <!-- Modal untuk Rise Hand Form -->
+        <div class="overlay" id="overlay"></div>
+        <div class="risehand-modal" id="risehand-modal">
+            <h3>Rise Hand</h3>
+            <input type="text" id="nama" placeholder="Nama">
+            <input type="text" id="kelompok" placeholder="Kelompok">
+            <button onclick="submitRiseHand()">Submit</button>
+            <button onclick="closeRiseHandModal()">Tutup</button>
+        </div>
+
+        <!-- Rise Hand List -->
+        <div class="risehand-list">
+            <h2>Rise Hand</h2>
+            <ul id="risehand-ul">
+                <!-- Data akan muncul di sini -->
+            </ul>
+        </div>
     </div>
 
     <script src="js/script.js"></script>
